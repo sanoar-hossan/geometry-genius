@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: #1090D81A;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 7px;
+}
+.heading-1{
+    color: #111111;
+}
+.heading-2{
+    color: #615656;
+}
+
+.header-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
