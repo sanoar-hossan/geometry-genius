@@ -9,8 +9,6 @@ if (isNaN(triangleBase)|| triangleBase<=0 || isNaN(triangleHeight) || triangleHe
     return;
   }
 
-
-
     const triangleArea=0.5*triangleBase*triangleHeight;
     setInnerText('tm',triangleArea)
     

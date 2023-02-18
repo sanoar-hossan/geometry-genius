@@ -17,7 +17,7 @@
             <h2 class="heading-1">Interactive </h2>
             <h4 class="heading-2">Geometry Genius </h4>
             </div>
-            <div class="header-btn">
+            <div class="header-btn" id="blog-btn">
             <button class="btn btn-primary">Blog</button>
         </div>
         </div>
@@ -44,15 +44,15 @@
         <div class="card" style="width: 18rem;">
             <img src="images/rectangle.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Triangle</h5>
-              <p class="card-text">Area (A) = 0.5 × b × h</p>
+              <h5 class="card-title">Rectangle</h5>
+              <p class="card-text">Area (A) = w × l</p>
               <div class="card-input">
-                <input class="form-control" type="number" placeholder="b">
+                <input id="rectangle-width" class="form-control" type="text" placeholder="w">
                 <span>cm</span>
-                <input class="form-control" type="number" placeholder="h">
+                <input id="rectangle-height" class="form-control" type="text" placeholder="l">
                 <span>cm</span>
               </div>
-              <a href="#" class="btn btn-primary card-btn">Calculate</a>
+              <a href="#" id="rectangle-btn" class="btn btn-primary card-btn">Calculate</a>
             </div>
           </div>
         <div class="card" style="width: 18rem;">
@@ -125,13 +125,13 @@
       </tr>
       
       <tr>
-        <td>2.ellipse</td>
-        <td> <span></span> <sup>2</sup></td>
+        <td>2.Rectangle</td>
+        <td> <span id="rectangle-multi"></span>cm <sup>2</sup></td>
        <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
       </tr>
       <tr>
         <td>3.rombos</td>
-        <td> <span ></span> <sup>2</sup></td>
+        <td> <span ></span>cm<sup>2</sup></td>
        <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
       </tr>
     </tbody>
@@ -152,5 +152,6 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/utilities.js"></script>
     <script src="js/triangle.js"></script>
+    <script src="js/rectangle.js"></script>
 </body>
 </html>

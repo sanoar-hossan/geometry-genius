@@ -18,3 +18,10 @@ function setInnerText(inputId,value) {
     
    
 }
+
+//blog page shift
+const blogButton = document.getElementById('blog-btn');
+
+blogButton.addEventListener('click', () => {
+  window.location.href = 'blog.html'; // Replace 'blog.html' with the path to your blog page.
+});
