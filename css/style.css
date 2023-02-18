@@ -39,8 +39,8 @@ main{
     flex-wrap: wrap;
 }
 .card img{
-padding: 50px;
-}
+    padding: 50px;
+    }
 .card-title , .card-text{
     text-align: center;
 }
