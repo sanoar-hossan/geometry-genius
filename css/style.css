@@ -32,10 +32,7 @@ main{
     
     margin: 50px 0px;
 }
-.card-section{
-display: flex;
-justify-content: space-around;
-}
+
 .card-details{
     display: flex;
     gap: 15px;
@@ -61,4 +58,15 @@ padding: 50px;
 /*area calculate style*/
 .card-output{
     border:1px solid #ced4da;
+}
+
+
+.card-details{
+    width: 75%;
+    margin: 0px auto;
+
+}
+.card-calculate{
+    width: 25%;
+    margin: 0px auto;
 }

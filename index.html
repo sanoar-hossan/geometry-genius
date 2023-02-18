@@ -22,13 +22,27 @@
         </div>
         </div>
     </header>
-    <main class="container">
+    <main>
         <!--card section-->
-<section>
-<div class="card-section ">
-    <div class="card-details col-md-6 col-lg-10">
+<section >
+<div class="card-section d-flex container">
+    <div class="card-details d-flex flex-wrap ">
         <div class="card" style="width: 18rem;">
             <img src="images/triangle.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Triangle</h5>
+              <p class="card-text">Area (A) = 0.5 × b × h</p>
+              <div class="card-input">
+                <input class="form-control" type="number" placeholder="b">
+                <span>cm</span>
+                <input class="form-control" type="number" placeholder="h">
+                <span>cm</span>
+              </div>
+              <a href="#" class="btn btn-primary card-btn" id="triangle-btn">Calculate</a>
+            </div>
+          </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/rectangle.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Triangle</h5>
               <p class="card-text">Area (A) = 0.5 × b × h</p>
@@ -42,7 +56,22 @@
             </div>
           </div>
         <div class="card" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
+            <img src="images/parallelogram.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Triangle</h5>
+              <p class="card-text">Area (A) = w × l</p>
+              <div class="card-input">
+                <input class="form-control" type="number" placeholder="w">
+                <span>cm</span>
+                <input class="form-control" type="number" placeholder="l">
+                <span>cm</span>
+              </div>
+              <a href="#" class="btn btn-primary card-btn">Calculate</a>
+            </div>
+          </div>
+          
+        <div class="card" style="width: 18rem;">
+            <img src="images/rhombus.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Triangle</h5>
               <p class="card-text">Area (A) = 0.5 × b × h</p>
@@ -56,7 +85,7 @@
             </div>
           </div>
         <div class="card" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
+            <img src="images/pentagon.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Triangle</h5>
               <p class="card-text">Area (A) = 0.5 × b × h</p>
@@ -70,7 +99,7 @@
             </div>
           </div>
         <div class="card" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
+            <img src="images/ellipse.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Triangle</h5>
               <p class="card-text">Area (A) = 0.5 × b × h</p>
@@ -83,43 +112,37 @@
               <a href="#" class="btn btn-primary card-btn">Calculate</a>
             </div>
           </div>
-        <div class="card" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Triangle</h5>
-              <p class="card-text">Area (A) = 0.5 × b × h</p>
-              <div class="card-input">
-                <input class="form-control" type="number" placeholder="b">
-                <span>cm</span>
-                <input class="form-control" type="number" placeholder="h">
-                <span>cm</span>
-              </div>
-              <a href="#" class="btn btn-primary card-btn">Calculate</a>
-            </div>
-          </div>
-        <div class="card" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Triangle</h5>
-              <p class="card-text">Area (A) = 0.5 × b × h</p>
-              <div class="card-input">
-                <input class="form-control" type="number" placeholder="b">
-                <span>cm</span>
-                <input class="form-control" type="number" placeholder="h">
-                <span>cm</span>
-              </div>
-              <a href="#" class="btn btn-primary card-btn">Calculate</a>
-            </div>
-          </div>
+        
     </div>
+<div class="card-calculate border">
+  <h4>Area Calculation</h4>
+  <table class="table">
+    <tbody>
+      <tr>
+        <td>1.Triangle</td>
+        <td> 54.45<span></span>cm<sup>2</sup></td>
+       <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
+      </tr>
+      
+      <tr>
+        <td>1.Triangle</td>
+        <td> <span></span> <sup>2</sup></td>
+       <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
+      </tr>
+      <tr>
+        <td>1.Triangle</td>
+        <td> <span></span> <sup>2</sup></td>
+       <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
+      </tr>
+    </tbody>
+  </table>
 
-    <div class="card-output">
-        <p><u>Area Calculation</u></p>
-    </div>
+
+</div>
+    
 </div>
 
 </section>
-
 
 
     </main>
@@ -128,5 +151,6 @@
 
     <script src="js/bootstrap.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/triangle.js"></script>
 </body>
 </html>

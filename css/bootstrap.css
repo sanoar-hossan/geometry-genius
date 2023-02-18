@@ -563,25 +563,25 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 640px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 820px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 1060px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1240px;
   }
 }
 
@@ -1673,39 +1673,25 @@ pre code {
   background-color: transparent;
 }
 
-.table th,
-.table td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-}
+
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+  
 }
 
-.table tbody + tbody {
-  border-top: 2px solid #dee2e6;
-}
 
-.table .table {
-  background-color: #fff;
-}
+
 
 .table-sm th,
 .table-sm td {
   padding: 0.3rem;
 }
 
-.table-bordered {
-  border: 1px solid #dee2e6;
-}
 
-.table-bordered th,
-.table-bordered td {
-  border: 1px solid #dee2e6;
-}
+
+
+
 
 .table-bordered thead th,
 .table-bordered thead td {
