@@ -27,7 +27,8 @@
 <section >
 <div class="card-section d-flex container">
     <div class="card-details d-flex flex-wrap ">
-        <div class="card" style="width: 18rem;">
+      <!--card-1-->
+        <div class="card random" style="width: 18rem;">
             <img src="images/triangle.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Triangle</h5>
@@ -41,7 +42,8 @@
               <a href="#" class="btn btn-primary card-btn" id="triangle-btn">Calculate</a>
             </div>
           </div>
-        <div class="card" style="width: 18rem;">
+          <!--card-2-->
+        <div class="card random" style="width: 18rem;">
             <img src="images/rectangle.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Rectangle</h5>
@@ -55,69 +57,79 @@
               <a href="#" id="rectangle-btn" class="btn btn-primary card-btn">Calculate</a>
             </div>
           </div>
-        <div class="card" style="width: 18rem;">
+          <!--card-3-->
+        <div class="card random" style="width: 18rem;">
             <img src="images/parallelogram.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Triangle</h5>
+              <h5 class="card-title">Parallelogram</h5>
               <p class="card-text">Area (A) = w × l</p>
               <div class="card-input">
-                <input class="form-control" type="number" placeholder="w">
+                <input id="parallelogram-width" class="form-control" type="text" placeholder="w">
                 <span>cm</span>
-                <input class="form-control" type="number" placeholder="l">
+                <input id="parallelogram-height" class="form-control" type="text" placeholder="l">
                 <span>cm</span>
               </div>
-              <a href="#" class="btn btn-primary card-btn">Calculate</a>
+              <a href="#" id="parallelogram-btn" class="btn btn-primary card-btn">Calculate</a>
             </div>
           </div>
-          
-        <div class="card" style="width: 18rem;">
+          <!--card-4-->
+        <div class="card random" style="width: 18rem;">
             <img src="images/rhombus.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Triangle</h5>
-              <p class="card-text">Area (A) = 0.5 × b × h</p>
+              <h5 class="card-title">Rhombus</h5>
+              <p class="card-text">Area (A) = 0.5 × d1 × d2</p>
               <div class="card-input">
-                <input class="form-control" type="number" placeholder="b">
+                <input id="base-width" class="form-control" type="text" placeholder="d1">
                 <span>cm</span>
-                <input class="form-control" type="number" placeholder="h">
+                <input id="base-height" class="form-control" type="text" placeholder="d2">
                 <span>cm</span>
               </div>
-              <a href="#" class="btn btn-primary card-btn">Calculate</a>
+              <a href="#" id="rhombus-btn" class="btn btn-primary card-btn">Calculate</a>
             </div>
           </div>
-        <div class="card" style="width: 18rem;">
+          <!--card-5-->
+        <div class="card random" style="width: 18rem;">
             <img src="images/pentagon.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Triangle</h5>
-              <p class="card-text">Area (A) = 0.5 × b × h</p>
+              <h5 class="card-title">Pentagon</h5>
+              <p class="card-text">Area (A) = 0.5 × p × b</p>
               <div class="card-input">
-                <input class="form-control" type="number" placeholder="b">
+                <input id="pentagon-base" class="form-control" type="text" placeholder="p">
                 <span>cm</span>
-                <input class="form-control" type="number" placeholder="h">
+                <input id="pentagon-height" class="form-control" type="text" placeholder="b">
                 <span>cm</span>
               </div>
-              <a href="#" class="btn btn-primary card-btn">Calculate</a>
+              <a href="#" id="pentagon-btn" class="btn btn-primary card-btn">Calculate</a>
             </div>
           </div>
-        <div class="card" style="width: 18rem;">
+          <!--card-6-->
+        <div class="card random" style="width: 18rem;">
             <img src="images/ellipse.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Triangle</h5>
-              <p class="card-text">Area (A) = 0.5 × b × h</p>
+              <h5 class="card-title">Ellipse</h5>
+              <p class="card-text">Area (A) = &pi; × a × b</p>
               <div class="card-input">
-                <input class="form-control" type="number" placeholder="b">
+                <input id="ellipse-width" class="form-control" type="text" placeholder="a">
                 <span>cm</span>
-                <input class="form-control" type="number" placeholder="h">
+                <input id="ellipse-height" class="form-control" type="text" placeholder="b">
                 <span>cm</span>
               </div>
-              <a href="#" class="btn btn-primary card-btn">Calculate</a>
+              <a href="#" id="ellipse-btn" class="btn btn-primary card-btn">Calculate</a>
             </div>
           </div>
         
     </div>
 <div class="card-calculate border">
   <h4 class="text-center"><u>Area Calculation</u></h4>
-  <table class="table">
-    <tbody>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Result</th>
+      <th>Transform</th>
+    </tr>
+    
+    <tbody id="table-container">
+     
       <tr>
         <td>1.Triangle</td>
         <td> <span id="tm"></span>cm<sup>2</sup></td>
@@ -130,10 +142,27 @@
        <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
       </tr>
       <tr>
-        <td>3.rombos</td>
-        <td> <span ></span>cm<sup>2</sup></td>
+        <td>3.Parallelogram</td>
+        <td> <span id="parallelogram-multi"></span>cm <sup>2</sup></td>
        <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
       </tr>
+      <tr>
+        <td>4.Rhombus</td>
+        <td> <span id="rhombus-multi"></span>cm <sup>2</sup></td>
+       <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
+      </tr>
+      <tr>
+        <td>5.Pentagon</td>
+        <td> <span id="pentagon-multi"></span>cm <sup>2</sup></td>
+       <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
+      </tr>
+      <tr>
+        <td>6.Pentagon</td>
+        <td> <span id="ellipse-multi"></span>cm <sup>2</sup></td>
+       <td><button class="text-white bg-primary border rounded">Convert to m<sup>2</sup></button></td>
+      </tr>
+      
+    
     </tbody>
   </table>
 
@@ -153,5 +182,8 @@
     <script src="js/utilities.js"></script>
     <script src="js/triangle.js"></script>
     <script src="js/rectangle.js"></script>
-</body>
+    <script src="js/parallelogram.js"></script>
+    <script src="js/rhombus.js"></script>
+    <script src="js/pentagon.js"></script>
+    <script src="js/ellipse.js"></script>
 </html>

@@ -1,10 +1,10 @@
-document.getElementById('triangle-btn').addEventListener('click',function () {
+document.getElementById('ellipse-btn').addEventListener('click',function () {
     
 
-    const triangleBase=getInputValue('tbi');
-    const triangleHeight=getInputValue('thi');
+    const ellipseWidth=getInputValue('ellipse-width');
+    const ellipseHeight=getInputValue('ellipse-height');
 //validation for input
-if (isNaN(triangleBase)|| triangleBase<=0 || isNaN(triangleHeight) || triangleHeight<=0) {
+if (isNaN(ellipseWidth)|| ellipseWidth<=0 || isNaN(ellipseHeight) || ellipseHeight<=0) {
     alert("Please enter valid values for Base and Height");
     return;
   }
@@ -12,8 +12,8 @@ if (isNaN(triangleBase)|| triangleBase<=0 || isNaN(triangleHeight) || triangleHe
 
 
   
-    const triangleArea=(0.5*triangleBase*triangleHeight).toFixed(2);
-    setInnerText('tm',triangleArea)
+    const ellipseArea=(0.5*ellipseWidth*ellipseHeight).toFixed(2);
+    setInnerText('ellipse-multi',ellipseArea)
 
 
 
@@ -23,9 +23,9 @@ if (isNaN(triangleBase)|| triangleBase<=0 || isNaN(triangleHeight) || triangleHe
     const tr=document.createElement("tr");
     tr.innerHTML=`
     <tr>
-    <td>1.triangle</td>
+    <td>6.ellipse</td>
     
-    <td>${triangleArea}</td>
+    <td>${ellipseArea}</td>
     <td><button class="text-white bg-primary border rounded" id="delete-btn">Convert to m<sup>2</sup></button></td>
   </tr>
         

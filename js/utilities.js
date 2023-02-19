@@ -23,5 +23,26 @@ function setInnerText(inputId,value) {
 const blogButton = document.getElementById('blog-btn');
 
 blogButton.addEventListener('click', () => {
-  window.location.href = 'blog.html'; // Replace 'blog.html' with the path to your blog page.
+  window.open('blog.html', '_blank');
 });
+
+
+
+//random color create in cards
+const cards = document.querySelectorAll('.random');
+
+for (const card of cards) {
+  // Store the original background color in a variable
+  const originalColor = card.style.backgroundColor;
+
+  card.addEventListener('mouseover', function() {
+    // Generate a new random color and set it as the background color
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    card.style.backgroundColor = randomColor;
+  });
+
+  card.addEventListener('mouseout', function() {
+    // Restore the original background color
+    card.style.backgroundColor = originalColor;
+  });
+}

@@ -1,10 +1,10 @@
-document.getElementById('triangle-btn').addEventListener('click',function () {
+document.getElementById('rhombus-btn').addEventListener('click',function () {
     
 
-    const triangleBase=getInputValue('tbi');
-    const triangleHeight=getInputValue('thi');
+    const baseWidth=getInputValue('base-width');
+    const baseHeight=getInputValue('base-height');
 //validation for input
-if (isNaN(triangleBase)|| triangleBase<=0 || isNaN(triangleHeight) || triangleHeight<=0) {
+if (isNaN(baseWidth)|| baseWidth<=0 || isNaN(baseHeight) || baseHeight<=0) {
     alert("Please enter valid values for Base and Height");
     return;
   }
@@ -12,8 +12,8 @@ if (isNaN(triangleBase)|| triangleBase<=0 || isNaN(triangleHeight) || triangleHe
 
 
   
-    const triangleArea=(0.5*triangleBase*triangleHeight).toFixed(2);
-    setInnerText('tm',triangleArea)
+    const rhombusArea=(0.5*baseWidth*baseHeight).toFixed(2);
+    setInnerText('rhombus-multi',rhombusArea)
 
 
 
@@ -23,9 +23,9 @@ if (isNaN(triangleBase)|| triangleBase<=0 || isNaN(triangleHeight) || triangleHe
     const tr=document.createElement("tr");
     tr.innerHTML=`
     <tr>
-    <td>1.triangle</td>
+    <td>4.Rhombus</td>
     
-    <td>${triangleArea}</td>
+    <td>${rhombusArea}</td>
     <td><button class="text-white bg-primary border rounded" id="delete-btn">Convert to m<sup>2</sup></button></td>
   </tr>
         
